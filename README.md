@@ -1,2 +1,2 @@
 # FoodifySwift
-All in one recipe app for multiplatform Apple devices
+All in one multiplatform recipe app for Apple devices

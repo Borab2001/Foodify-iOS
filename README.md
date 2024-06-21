@@ -1,2 +1,2 @@
-# FoodifyIOS
-All in one recipe app for IOS devices
+# Foodify-iOS
+All in one recipe app for iOS devices

@@ -9,7 +9,23 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                Image("home-bg") //
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                
+                VStack {
+                    Image("foodify-app-icon-white")
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.8), Color.black.opacity(0.6), Color.black.opacity(0.25), Color.clear]), startPoint: .bottom, endPoint: .top)
+                )
+                .ignoresSafeArea()
+            }
+        }
     }
 }
 

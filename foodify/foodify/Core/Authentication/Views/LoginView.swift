@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -18,6 +21,15 @@ struct LoginView: View {
                 
                 VStack {
                     Image("foodify-app-icon-white")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 120, height: 120)
+                        .padding()
+                    VStack {
+                        TextField("Enter your email", text: $email)
+                        
+                        SecureField("Enter your password", text: $password)
+                    }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(

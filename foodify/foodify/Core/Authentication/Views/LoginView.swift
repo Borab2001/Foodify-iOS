@@ -19,10 +19,15 @@ struct LoginView: View {
                     .scaledToFill()
                     .ignoresSafeArea()
                 
+                LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.8), Color.black.opacity(0.6), Color.black.opacity(0.25), Color.clear]), startPoint: .bottom, endPoint: .top)
+                    .ignoresSafeArea()
+                
                 VStack {
+                    Spacer()
+                    
                     Image("foodify-app-icon-white")
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: 120, height: 120)
                         .padding()
                     VStack {
@@ -54,12 +59,25 @@ struct LoginView: View {
                             .background(.white)
                             .cornerRadius(8)
                     }
+                    
+                    Spacer()
+                    
+                    Divider()
+                    
+                    NavigationLink {
+                        Text("Registration View")
+                    } label: {
+                        HStack {
+                            Text("Don't have an account?")
+                            
+                            Text("Sign Up")
+                        }
+                        .padding()
+                    }
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(
-                    LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.8), Color.black.opacity(0.6), Color.black.opacity(0.25), Color.clear]), startPoint: .bottom, endPoint: .top)
-                )
-                .ignoresSafeArea()
+                .padding(.top) // Ensure content does not overlap with safe area
+                .padding([.leading, .trailing]) // Ensure content does not overlap with safe area
+                .padding(.bottom)
             }
         }
     }

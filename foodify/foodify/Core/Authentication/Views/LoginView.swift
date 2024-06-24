@@ -67,13 +67,17 @@ struct LoginView: View {
                     NavigationLink {
                         Text("Registration View")
                     } label: {
-                        HStack {
+                        HStack(spacing: 3) {
                             Text("Don't have an account?")
                             
                             Text("Sign Up")
+                                .fontWeight(.semibold)
                         }
+                        .font(.footnote)
+                        .foregroundColor(.white)
                         .padding()
                     }
+                    .padding(.vertical, 16)
                 }
                 .padding(.top) // Ensure content does not overlap with safe area
                 .padding([.leading, .trailing]) // Ensure content does not overlap with safe area

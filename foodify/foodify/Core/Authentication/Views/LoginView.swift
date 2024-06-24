@@ -30,6 +30,30 @@ struct LoginView: View {
                         
                         SecureField("Enter your password", text: $password)
                     }
+                    
+                    NavigationLink {
+                        Text("Forgot password")
+                    } label: {
+                        Text("Forgot Password?")
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                            .padding(.top)
+                            .padding(.trailing, 28)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
+                    
+                    Button {
+                        
+                    } label: {
+                        Text("Login")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
+                            .frame(width: 352, height: 44)
+                            .background(.white)
+                            .cornerRadius(8)
+                    }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(

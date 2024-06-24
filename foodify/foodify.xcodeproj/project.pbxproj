@@ -12,6 +12,7 @@
 		3453B2102C287178004293AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3453B20F2C287178004293AC /* Assets.xcassets */; };
 		3453B2132C287178004293AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3453B2122C287178004293AC /* Preview Assets.xcassets */; };
 		3453B2242C28750A004293AC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453B2232C287509004293AC /* LoginView.swift */; };
+		34ED3B942C29DB7900139EEF /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED3B932C29DB7900139EEF /* Color+Extensions.swift */; };
 		34F556092C299253006EBCCA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F556082C299253006EBCCA /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		3453B20F2C287178004293AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3453B2122C287178004293AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3453B2232C287509004293AC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		34ED3B932C29DB7900139EEF /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		34F556082C299253006EBCCA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 		3453B21B2C287395004293AC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				34ED3B932C29DB7900139EEF /* Color+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34ED3B942C29DB7900139EEF /* Color+Extensions.swift in Sources */,
 				3453B2242C28750A004293AC /* LoginView.swift in Sources */,
 				34F556092C299253006EBCCA /* HomeView.swift in Sources */,
 				3453B20E2C287177004293AC /* ContentView.swift in Sources */,

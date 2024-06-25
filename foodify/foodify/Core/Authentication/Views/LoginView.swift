@@ -23,20 +23,22 @@ struct LoginView: View {
                     .padding()
                 
                 VStack {
-                    TextField("Enter your email", text: $email)
+                    TextField("", text: $email)
+                        .foregroundColor(.white)
+                        .placeholder("Enter your email", show: email.isEmpty, color: .primaryGray)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color.secondaryBlack)
-                        .foregroundColor(.primaryGray)
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
 
                     
-                    SecureField("Enter your password", text: $password)
+                    SecureField("", text: $password)
+                        .foregroundColor(.white)
+                        .placeholder("Enter your password", show: password.isEmpty, color: .primaryGray)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color.secondaryBlack)
-                        .foregroundColor(.primaryGray)
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
                 }

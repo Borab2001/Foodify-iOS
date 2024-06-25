@@ -10,6 +10,8 @@ import SwiftUI
 struct RegistrationView: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var fullname = ""
+    @State private var username = ""
     
     var body: some View {
         VStack {

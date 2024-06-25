@@ -16,7 +16,7 @@ struct HomeView: View {
                     .scaledToFill()
                     .ignoresSafeArea()
                 
-                LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.9), Color.black.opacity(0.75), Color.black.opacity(0.3), Color.clear]), startPoint: .bottom, endPoint: .top)
+                LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.85), Color.black.opacity(0.85), Color.black.opacity(0.3), Color.clear]), startPoint: .bottom, endPoint: .top)
                     .ignoresSafeArea()
                 
                 VStack {

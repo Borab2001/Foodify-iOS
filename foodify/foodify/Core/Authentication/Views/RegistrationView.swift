@@ -25,41 +25,16 @@ struct RegistrationView: View {
             
             VStack {
                 TextField("", text: $email)
-                    .foregroundColor(.white)
-                    .placeholder("Enter your email", show: email.isEmpty, color: .primaryGray)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.secondaryBlack)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .foodifyTextField(placeholder: "Enter your email", showPlaceholder: email.isEmpty)
                 
                 SecureField("", text: $password)
-                    .foregroundColor(.white)
-                    .placeholder("Enter your password", show: password.isEmpty, color: .primaryGray)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.secondaryBlack)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .foodifyTextField(placeholder: "Enter your password", showPlaceholder: password.isEmpty)
                 
                 TextField("", text: $fullname)
-                    .foregroundColor(.white)
-                    .placeholder("Enter your full name", show: fullname.isEmpty, color: .primaryGray)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.secondaryBlack)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .foodifyTextField(placeholder: "Enter your full name", showPlaceholder: fullname.isEmpty)
                 
                 TextField("", text: $username)
-                    .foregroundColor(.white)
-                    .placeholder("Enter your username", show: username.isEmpty, color: .primaryGray)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color.secondaryBlack)
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
-                
+                    .foodifyTextField(placeholder: "Enter your username", showPlaceholder: username.isEmpty)
             }
             
             Button {

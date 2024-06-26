@@ -24,23 +24,10 @@ struct LoginView: View {
                 
                 VStack {
                     TextField("", text: $email)
-                        .foregroundColor(.white)
-                        .placeholder("Enter your email", show: email.isEmpty, color: .primaryGray)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color.secondaryBlack)
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
-
+                        .foodifyTextField(placeholder: "Enter your email", showPlaceholder: email.isEmpty)
                     
                     SecureField("", text: $password)
-                        .foregroundColor(.white)
-                        .placeholder("Enter your password", show: password.isEmpty, color: .primaryGray)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color.secondaryBlack)
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .foodifyTextField(placeholder: "Enter your password", showPlaceholder: password.isEmpty)
                 }
                 
                 NavigationLink {

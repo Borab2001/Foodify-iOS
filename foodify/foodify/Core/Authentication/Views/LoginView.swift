@@ -24,6 +24,7 @@ struct LoginView: View {
                 
                 VStack {
                     TextField("", text: $email)
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                         .foodifyTextField(placeholder: "Enter your email", showPlaceholder: email.isEmpty)
                     
                     SecureField("", text: $password)

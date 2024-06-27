@@ -41,8 +41,9 @@ struct HomeView: View {
                     }
                     
                     VStack(spacing: 4) {
-                        Button {
-                            
+                        NavigationLink {
+                            RegistrationView()
+                                .navigationBarBackButtonHidden()
                         } label: {
                             Text("Sign Up")
                                 .font(.subheadline)
@@ -54,8 +55,9 @@ struct HomeView: View {
                                 .padding(.top, 36)
                         }
                         
-                        Button {
-                        
+                        NavigationLink {
+                            LoginView()
+                                .navigationBarBackButtonHidden()
                         } label: {
                             Text("Login")
                                 .font(.subheadline)

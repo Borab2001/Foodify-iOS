@@ -46,7 +46,7 @@ struct FoodifyTabView: View {
                 .onAppear { selectedTab = 3 }
                 .tag(3)
             
-            Text("Calendar")
+            CalendarView()
                 .tabItem {
                     Image(systemName: "calendar")
                         

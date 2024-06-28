@@ -21,7 +21,7 @@ struct FoodifySidebarView: View {
                 
                 VStack(alignment: .leading, spacing: 6) {
                     Text("John Doe")
-                        .font(.title2.bold())
+                        .font(.title3.bold())
                     
                     Text("@johndoe")
                         .font(.callout)
@@ -59,7 +59,18 @@ struct FoodifySidebarView: View {
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 48) {
-                    // Sidebar Buttons
+                    
+                    SidebarButton(title: "Add Recipe", image: "plus.circle")
+                    
+                    SidebarButton(title: "My Recipes", image: "pencil.circle")
+                    
+                    SidebarButton(title: "Favorites", image: "heart")
+                    
+                    SidebarButton(title: "Profile", image: "person")
+                    
+                    Divider()
+                    
+                    SidebarButton(title: "Settings", image: "gearshape")
                 }
                 .padding()
                 .padding(.leading)
@@ -85,13 +96,14 @@ struct FoodifySidebarView: View {
             
         } label: {
             HStack(spacing: 12) {
-                Image(image)
+                Image(systemName: image)
                     .resizable()
                     .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
                     .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                     .frame(width: 24, height: 24)
                 
                 Text(title)
+                    .fontWeight(.semibold)
             }
             .foregroundColor(.black)
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)

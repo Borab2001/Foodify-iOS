@@ -12,7 +12,7 @@ struct FoodifyTabView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("Feed")
+            FeedView()
                 .tabItem { 
                     Image(systemName: selectedTab == 0 ? "house" : "house")
                         .environment(\.symbolVariants, selectedTab == 0 ? .fill : .none)

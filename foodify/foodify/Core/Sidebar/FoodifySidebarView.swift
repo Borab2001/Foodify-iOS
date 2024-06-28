@@ -56,6 +56,16 @@ struct FoodifySidebarView: View {
             .padding(.all)
             .padding(.leading)
             .foregroundColor(.black)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 48) {
+                    // Sidebar Buttons
+                }
+                .padding()
+                .padding(.leading)
+                .padding(.top, 32)
+            }
+            
         }
         .padding(.vertical)
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
@@ -67,6 +77,25 @@ struct FoodifySidebarView: View {
                 .ignoresSafeArea(.container, edges: .vertical)
         )
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    @ViewBuilder
+    func SidebarButton(title: String, image: String) -> some View {
+        Button {
+            
+        } label: {
+            HStack(spacing: 12) {
+                Image(image)
+                    .resizable()
+                    .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
+                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                    .frame(width: 24, height: 24)
+                
+                Text(title)
+            }
+            .foregroundColor(.black)
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
+        }
     }
 }
 

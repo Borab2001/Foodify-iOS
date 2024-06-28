@@ -37,7 +37,7 @@ struct FoodifyTabView: View {
                 .onAppear { selectedTab = 2 }
                 .tag(2)
             
-            Text("Shopping List")
+            ShoppingListView()
                 .tabItem {
                     Image(systemName: selectedTab == 3 ? "bag.fill" : "bag")
                         .environment(\.symbolVariants, selectedTab == 3 ? .fill : .none)

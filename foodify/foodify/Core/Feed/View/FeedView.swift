@@ -11,12 +11,16 @@ struct FeedView: View {
     @State var showSidebar: Bool = false
     
     var body: some View {
-        Text("Feed View")
+        
         
         NavigationView {
             HStack(spacing: 0) {
                 FoodifySidebarView(showSidebar: $showSidebar)
+                
+                Text("Feed View")
             }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
     }
 }

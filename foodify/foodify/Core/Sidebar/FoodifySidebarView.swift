@@ -73,7 +73,6 @@ struct FoodifySidebarView: View {
                     SidebarButton(title: "Settings", image: "gearshape")
                 }
                 .padding()
-                .padding(.leading)
                 .padding(.top, 32)
             }
             
@@ -108,6 +107,7 @@ struct FoodifySidebarView: View {
             .foregroundColor(.black)
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
         }
+        .padding(.horizontal)
     }
 }
 

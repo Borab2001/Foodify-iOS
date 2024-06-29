@@ -22,6 +22,7 @@
 		34D8BFC82C2EF89A005815E5 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D8BFC72C2EF89A005815E5 /* ShoppingListView.swift */; };
 		34D8BFCC2C2EF8ED005815E5 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D8BFCB2C2EF8ED005815E5 /* CalendarView.swift */; };
 		34D8BFCF2C2F00D4005815E5 /* FoodifySidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D8BFCE2C2F00D4005815E5 /* FoodifySidebarView.swift */; };
+		34D8BFD12C307B31005815E5 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D8BFD02C307B31005815E5 /* RecipeCell.swift */; };
 		34ED3B942C29DB7900139EEF /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34ED3B932C29DB7900139EEF /* Color+Extensions.swift */; };
 		34F556092C299253006EBCCA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F556082C299253006EBCCA /* HomeView.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		34D8BFC72C2EF89A005815E5 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		34D8BFCB2C2EF8ED005815E5 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		34D8BFCE2C2F00D4005815E5 /* FoodifySidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodifySidebarView.swift; sourceTree = "<group>"; };
+		34D8BFD02C307B31005815E5 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		34ED3B932C29DB7900139EEF /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		34F556082C299253006EBCCA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				34D8BFBB2C2EF177005815E5 /* FeedView.swift */,
+				34D8BFD02C307B31005815E5 /* RecipeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				34D8BFC42C2EF826005815E5 /* RefrigeratorView.swift in Sources */,
 				34D8BFC02C2EF26C005815E5 /* ExploreView.swift in Sources */,
 				34D8BFCF2C2F00D4005815E5 /* FoodifySidebarView.swift in Sources */,
+				34D8BFD12C307B31005815E5 /* RecipeCell.swift in Sources */,
 				34D8BFBC2C2EF177005815E5 /* FeedView.swift in Sources */,
 				34ED3B942C29DB7900139EEF /* Color+Extensions.swift in Sources */,
 				34D8BFB82C2D96DD005815E5 /* FoodifyTabView.swift in Sources */,

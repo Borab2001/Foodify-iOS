@@ -12,13 +12,20 @@ struct FeedView: View {
     
     var body: some View {
         
+        let sidebarWidth = getRect().width - 90
         
         NavigationView {
             HStack(spacing: 0) {
                 FoodifySidebarView(showSidebar: $showSidebar)
                 
-                Text("Feed View")
+                VStack {
+                    Text("Feed View")
+                }
+                .frame(width: getRect().width)
+                
             }
+            .frame(width: getRect().width + sidebarWidth)
+            .offset(x: -sidebarWidth / 2)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)
         }

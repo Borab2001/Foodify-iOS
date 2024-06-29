@@ -57,24 +57,28 @@ struct FoodifySidebarView: View {
             .padding(.leading)
             .foregroundColor(.black)
             
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 48) {
-                    
-                    SidebarButton(title: "Add Recipe", image: "plus.circle")
-                    
-                    SidebarButton(title: "My Recipes", image: "pencil.circle")
-                    
-                    SidebarButton(title: "Favorites", image: "heart")
-                    
-                    SidebarButton(title: "Profile", image: "person")
-                    
-                    Divider()
-                    
-                    SidebarButton(title: "Settings", image: "gearshape")
-                }
-                .padding()
-                .padding(.top, 32)
+            
+            VStack(alignment: .leading, spacing: 40) {
+                
+                SidebarButton(title: "Add Recipe", image: "plus.circle")
+                
+                SidebarButton(title: "My Recipes", image: "pencil.circle")
+                
+                SidebarButton(title: "Favorites", image: "heart")
+                
+                SidebarButton(title: "Profile", image: "person")
+                
+                
+                Spacer()
+                
+                Divider()
+                
+                SidebarButton(title: "Help & Support", image: "questionmark.circle")
+                
+                SidebarButton(title: "Settings", image: "gearshape")
             }
+            .padding()
+            .padding(.top, 32)
             
         }
         .padding(.vertical)
@@ -88,6 +92,7 @@ struct FoodifySidebarView: View {
         )
         .frame(maxWidth: .infinity, alignment: .leading)
     }
+    
     
     @ViewBuilder
     func SidebarButton(title: String, image: String) -> some View {
